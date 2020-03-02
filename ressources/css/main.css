@@ -246,7 +246,8 @@ button{
     height: 2rem;
 }
 
-.navigation-box .nenu-bar img{
+.navigation-box .nenu-bar img,
+.navigation-box .d-search img{
     height: 3rem;
     display: none;
 }
@@ -755,7 +756,8 @@ i
         display: none!important;
     }
 
-    .navigation-box .menu-bar img{
+    .navigation-box .nenu-bar img,
+    .navigation-box .d-search img{
         display: block!important;
     }
 }

@@ -23,3 +23,8 @@ $('.owl-carousel').owlCarousel({
 
 
 // navbar
+$(function() {
+    $('.menu-bar').click(function() {
+        $('.d-nones').toggle();
+    });
+})
