@@ -80,7 +80,6 @@ button{
 
 /* INDEX  ********************************************** */
 
-
 .navigation-box{
     display: flex;
     justify-content: space-between;
@@ -215,6 +214,7 @@ button{
     display: block;
     border-top: 2px solid var(--color-B-btn);
     padding: 1rem;
+    z-index: 1;
 }
 
 .navigation-box .sous-categories{
@@ -246,7 +246,7 @@ button{
     height: 2rem;
 }
 
-.navigation-box .nenu-bar img,
+.navigation-box .menu-bar img,
 .navigation-box .d-search img{
     height: 3rem;
     display: none;
@@ -258,9 +258,10 @@ button{
 {
     /* background-color: black; */
     padding: 0 20px;
+    box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
 }
 
-.navbar-brand img
+/* .navbar-brand img
 {
     min-height: 40px;
     width: 50px;
@@ -311,7 +312,7 @@ i
 {
     margin-left: 15px;
     width: 110px;
-}
+} */
 
 .Iheader
 {
@@ -373,42 +374,6 @@ i
     margin-right: 1rem;
 }
 
-/* .Iservice
-{
-    min-height: 115px;
-    background-color: var(--color-primary);
-    display: flex;
-    padding-left: o auto;
-    margin-bottom: 50px;
-}
-
-.Iservice__detail
-{
-    display: flex;
-    padding-top: 2.2%;
-    margin: 0 auto;
-    min-width: 200px;
-}
-
-.Iservice__detail img
-{
-    min-height: 55px;
-    width: 55px;
-    margin-left: 10px;
-    margin-top: -10px;
-}
-
-.Iservice__detail p
-{
-    margin-left: 20px;
-    font-weight: bold;
-}
-
-.Ip
-{
-    margin-top: -10px;
-} */
-
 /* card cours */
 
 .MaSection
@@ -456,14 +421,25 @@ i
     color: var(--color-black);
 }
 
+.etoile{
+    margin-right: 2rem;
+}
+
+.etoile img{
+    height: 1.5rem!important;
+    width: 1.5rem!important;
+}
+
 
 
 /*-- Les Cards --*/
 .B-card{
     /* width: 20%; */
+    border: none!important;
+    border-radius: 0!important;
     margin-top: 3rem;
     position: relative;
-    box-shadow: 0px 2px 8px -1px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 1px 1px rgba(20,23,28,.1), 3px 3px 1px 1px rgba(20,23,28,.1);
 }
 
 .price
@@ -523,14 +499,15 @@ i
     left: 100%; 
     z-index: 333333;
 }
+
 .tooltip-bloc
 {
-    width: 155%;
+    width: 160%;
     margin: 0px 10px;
     padding: 7px 15px;
     background: var(--color-white);
     font-size: 13px;
-    border-radius: 5px;
+    border-radius: 2px;
     box-shadow: 0px 2px 8px -1px rgba(0,0,0,0.75);
 }
 
@@ -552,11 +529,11 @@ i
     background: var(--color-B-btn);
     width: 50%;
     border: none;
-    padding: 5px;
+    padding: 10px 5px;
     color: var(--color-white);
     margin: 10px 0;
-    border-radius: 10px;
 }
+
 /* -- affichage tooltip -- */
 .B-card:hover .tooltipHiden
 {
@@ -631,6 +608,7 @@ i
     margin-top: 2rem;
     margin-bottom: 3rem;
     box-shadow: 0px 4px 6px -5px rgba(0,0,0,0.85);
+    width: 100%;
 }
 
 #categories .categorie-item img{
@@ -671,6 +649,7 @@ i
 
 .TestemonySlide .description{
     text-align: justify;
+    color: rgba(0, 0, 0, 0.603);
 }
 
 .TestonialProfInfo p{
@@ -694,6 +673,160 @@ i
 
 .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot{
     display: none;
+}
+
+/* PAGE INSCRIPTION ************************************* */
+/* PAGE INSCRIPTION ************************************* */
+/* PAGE INSCRIPTION ************************************* */
+/* PAGE INSCRIPTION ************************************* */
+/* PAGE INSCRIPTION ************************************* */
+/* PAGE INSCRIPTION ************************************* */
+
+#inscription{
+    padding: 5rem 0;
+    min-height: 40vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.767)), url(../images/pattern-what-the-hex.png);
+}
+
+#inscription .description-inscription{
+    width: 80%;
+    margin: auto;
+}
+
+#inscription .description-inscription h1{
+    color: white;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+#inscription .description-inscription p{
+    color: rgb(172, 172, 172);
+}
+
+#inscription .form-inscription{
+    background: white;
+    min-height: 40rem;
+    width: 70%;
+    margin: auto;
+    border-radius: .3rem;
+    padding: 2.5rem;
+}
+
+#inscription .form-connexion{
+    padding: 4rem 2.5rem;
+}
+
+#inscription .form-inscription input ::placeholder{
+    font-size: 1rem;
+}
+
+#inscription .form-inscription input{
+    outline: none;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 1rem .5rem;
+    color: rgba(0, 0, 0, 0.719);
+    border: 1px solid rgba(0, 0, 0, 0.301);
+    transition: .5s;
+}
+
+#inscription .form-inscription input:focus{
+    border: 1px solid var(--color-B-btn);
+    transition: .5s;
+}
+
+#inscription .form-inscription input{
+    
+}
+
+#inscription .form-inscription button{
+    background: #95329a;
+    border: 1px solid #95329a;
+    font-size: 2rem;
+    width: 100%;
+    padding: 1.3rem;
+    outline: none;
+    color: white;
+    transition: .5s;
+}
+
+#inscription .form-inscription button:hover{
+    transform: translateY(5%);
+    transition: .5s;
+}
+
+#inscription .form-inscription button:hover{
+    background: #7a2d7e;
+    transition: .5s;
+}
+
+#inscription .form-inscription .connexion{
+    margin-top: 1rem;
+}
+
+#inscription .form-inscription .forgot{
+    font-size: 1.5rem;
+}
+
+#inscription .form-inscription .form-row span{
+    color: rgba(0, 0, 0, 0.726);
+}
+
+#inscription .form-inscription .img-connexion img{
+    height: 3rem;
+    margin: 1rem 1rem 0;
+}
+
+/* custom file */
+.input-file-container {
+    position: relative;
+    width: 50%;
+    margin-bottom: 2rem;
+} 
+
+.js .input-file-trigger {
+    display: block;
+    padding: 1rem .5rem;
+    background: rgba(0, 0, 0, 0.739);
+    color: #fff;
+    font-size: 1em;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.js .input-file {
+    position: absolute;
+    top: 0; left: 0;
+    width: 225px;
+    opacity: 0;
+    padding: 14px 0;
+    cursor: pointer;
+}
+
+.js .input-file:hover + .input-file-trigger,
+.js .input-file:focus + .input-file-trigger,
+.js .input-file-trigger:hover,
+.js .input-file-trigger:focus {
+    background: rgba(0, 0, 0, 0.76);
+    color: green;
+}
+
+.file-return {
+    margin: 0;
+}
+.file-return:not(:empty) {
+    margin: 1em 0;
+}
+.js .file-return {
+    font-style: italic;
+    font-size: .9em;
+    font-weight: bold;
+}
+.js .file-return:not(:empty):before {
+    content: "Selected file: ";
+    font-style: normal;
+    font-weight: normal;
 }
 
 /* FOOTER ********************************* */
@@ -756,9 +889,30 @@ i
         display: none!important;
     }
 
-    .navigation-box .nenu-bar img,
+    .navigation-box .menu-bar img,
     .navigation-box .d-search img{
         display: block!important;
+    }
+
+    /* tooltip */
+    .tooltipHiden
+    {
+        visibility: hidden;
+        position: absolute;
+        top: 100%;
+        left: -10%;
+        z-index: 333333;
+    }
+
+    .tooltip-bloc
+    {
+        width: 100%;
+        margin: 0px 10px;
+        padding: 7px 15px;
+        background: var(--color-white);
+        font-size: 13px;
+        border-radius: 2px;
+        box-shadow: 0px 2px 8px -1px rgba(0,0,0,0.75);
     }
 }
 
@@ -781,6 +935,15 @@ i
         margin-left: 0;
         
     }
+
+    /* form inscription */
+    #inscription .description-inscription{
+        margin-bottom: 3rem;
+    }
+
+    #inscription .form-inscription{
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 576px){
@@ -797,4 +960,46 @@ i
         margin-bottom: 0;
         padding: 2rem;
     }
+
+    /* tooltip */
+    .tooltipHiden
+    {
+        visibility: hidden;
+        position: absolute;
+        top: 100%;
+        left: -5%;
+        z-index: 333333;
+    }
+
+    .tooltip-bloc
+    {
+        width: 100%;
+        margin: 0px 10px;
+        padding: 7px 15px;
+    }
+
+    /* page inscription abd connexion */
+    #inscription .description-inscription h1{
+        font-size: 3rem;
+    }
+
+    #inscription .description-inscription p{
+        font-size: 1.5rem;
+    }
+
+    .input-file-container {
+        position: relative;
+        width: 60%;
+        margin-bottom: 2rem;
+    } 
 }
+
+@media screen and (max-width:400px){
+    /* form inscription */
+    #inscription .description-inscription{
+        width: 100%;
+    }
+    #inscription .form-inscription{
+        width: 100%;
+    }
+}    
